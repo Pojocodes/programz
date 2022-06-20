@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="textbox">
             <h3 class="textbox__head">
-                learn to code by watching others
+                Learn to code by watching others
             </h3>
             <p class="textbox__para">
                 see how experienced developers slove problems in real-time.
@@ -21,25 +22,35 @@
         </div>
         <div class="formbox">
             <div class="accent">
-                <span>try it free for 7 days then $20/mo. thereafter</span>
+                <span>Try it free for 7 days</span> then $20/mo. thereafter
             </div>
             <form action="#" class="form">
                 <div class="formgroup">
-                    <input type="text" class="form__input" placeholder="First Name">
+                    <input type="text" class="form__input" placeholder="First Name" required id="inp">
+                    <img src="img/icon-error.svg" alt="" class="errorimg">
+                    <p class="errormsg">First name cannot be empty</p>
                 </div>
                 <div class="formgroup">
-                    <input type="text" class="form__input" placeholder="Last Name">
+                    <input type="text" class="form__input" placeholder="Last Name" required id="inp">
+                    <img src="img/icon-error.svg" alt="" class="errorimg">
+                    <p class="errormsg">Last name cannot be empty</p>
                 </div>
                 <div class="formgroup">
-                    <input type="email" class="form__input" placeholder="Email Address">
+                    <input type="email" class="form__input" placeholder="Email Address" required id="inp">
+                    <img src="img/icon-error.svg" alt="" class="errorimg">
+                    <p class="errormsg">Looks like this is not an Email</p>
                 </div>
                 <div class="formgroup">
-                    <input type="password" class="form__input" placeholder="Password">
+                    <input type="password" class="form__input" placeholder="Password" required id="inp">
+                    <img src="img/icon-error.svg" alt="" class="errorimg">
+                    <p class="errormsg">Password cannot be empty</p>
                 </div>
-                <button class="form__button">claim your free trial</button>
+                <div class="formbtn">
+                    <input type="submit" class="form__btn" value="claim your free trial" required >
+                </div>
                 <div class="legal">
                     <p class="legal__para">
-                        by clicking the button, you are agreeing to our. <span>terms and services</span>
+                        By clicking the button, you are agreeing to our. <span>Terms and Services</span>
                     </p>
                 </div>
             </form>
