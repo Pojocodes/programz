@@ -173,7 +173,16 @@ body {
     }
 
     .textbox{
+        margin-top: 4rem;
         margin-bottom: 3rem;
         margin-right: 0;
+        text-align: center;
+        line-height: 1.5;
     }
+
+    .textbox__head {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
 }
